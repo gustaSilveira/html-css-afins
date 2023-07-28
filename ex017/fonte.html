@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes em CSS</title>
+
+    <Style> 
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,100&display=swap');
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        /*medidas absolutas
+        CM(centimetro), MM(melimetro), IN(polegada), PX(pixel), PT(ponto), PC(paica)
+
+                medidas relativas
+            em	->	relativo ao tamanho natural da fonte
+            ex	->	relativo a altura x da fonte
+            rem	->	tipo em, mas relativo a fonte configurada no body
+            vw	->	relativo a largura da view port
+            vh	->	relativo a altura da view port
+            %	->	porcentagem*/
+        font-size: 1em;
+        /*weight=peso, width=largura, height=altura*/
+        font-weight:normal ;
+        /*os valores de weight sao: lighter, normal, bold e bolder, em orderm do mais fino ao mais grosso*/
+        font-style: italic;
+        /*define o estilo da fonte, seja negrito ou italico ou normal*/
+        text-decoration: underline;
+        /*serve como decoraçao no texto, como por exemplo colocar o sublinhado*/
+
+        /*da pra dar um shorthand font
+        1 poe o font-style, 2 font-weight, 3 font-size, 4 font-family*/
+    }
+
+    h2{  /*da pra dar um shorthand font
+        1 poe o font-style, 2 font-weight, 3 font-size, 4 font-family exemplo abaixo*/
+        font: italic bolder 3em 'work sans', sans-serif;
+        text-decoration: underline;
+    
+    }
+    </Style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempore numquam praesentium eum iusto, libero vero quae? Asperiores, nam velit laborum ut autem quia mollitia sapiente voluptatibus sint accusantium pariatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas asperiores, expedita quam molestiae atque vero ipsa placeat iste eius, itaque veniam possimus ut quasi. Amet odio deleniti ea pariatur fuga!</p>
+    <h2>subtitulo do exercicio</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae velit nisi cum ut impedit reprehenderit minima, aut odio modi illum doloremque beatae, quae accusamus ducimus eos ipsa fuga eum quis.</p>
+</body>
+</html>
